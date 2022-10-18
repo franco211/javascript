@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contrastors.css">
+    <title>Under Construction</title>
+</head>
+<body>
+    <header>
+        <h1><strong> Approved Contractors Only.</strong></h1>
+        <p>Please fill in the information.</p>
+
+    </header>
+    
+    <main>
+
+        <form method="get" action="" target="_blank" class="pure-form pure-form-aligned">
+            <fieldset>
+                <legend><strong> Contractor.</strong></legend>
+                <div class="pure-control-group">
+                    <label for="Name" >Names:<br> 
+                    <input type="text"  required pattern="[a-z]" name="name" autocomplete="name"  aria-describedby="name-validation" required>
+                    <span id="name-validation" aria-live="assertive" class="validation-message"></span>
+                    </label>
+                    <br>
+                </div>
+    
+                <div class="pure-control-group">
+                    <label for="telephone"> Telephone:<br> 
+                    <input type="number" required pattern="{2,20}" name="telephone" required>
+                    </label>
+                    <br>
+                </div>
+    
+                <div class="pure-control-group">
+                    <label for="Date">Date:<br> 
+                    <input type="date" name="Date">
+                    </label>
+                    <br>
+                </div>
+    
+                <div class="pure-control-group">
+                    <label for="time"> Time:<br>
+                    <input type="time" name="time" min="09:00" max="18:00" required>
+                    <small>inspection hours are 9am to 6pm</small>
+                    </label>
+                    <br>
+                </div>
+    
+                <div class="pure-controls">
+                    <label for="Approved or Not" class="pure-checkbox"> Approved or Not:<br> 
+                    <select type="checkbox" id="house" name="house">
+                        <option value="Approved">Approved</option>
+                        <option value="Not approved">not approved</option>
+                    </select>
+                    </label>
+                    <br>
+                </div>
+    
+                <div class="pure-control-group">
+                    <label for="photo">Photo:<br>
+                    <input type="file" id="photo" name="photo">
+                    </label>
+                    <br>
+                </div>
+    
+                <div>
+                    <label for="comments" id="post"> comments:<br> 
+                    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                    </label>
+                    <br>
+                </div>
+    
+                <div class="pure-control-group">
+                    <button type = "Submit" class="pure-button pure-button-primary">Save</button>
+                </div>
+            </fieldset>
+    
+         </form>
+
+    </main>
+
+     <script src="contractors.js"></script>
+</body>
+</html>

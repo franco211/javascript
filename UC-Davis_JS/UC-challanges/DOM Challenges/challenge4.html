@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM challenges</title>
+</head>
+<body>
+    <h1>challenge 4</h1>
+
+    <!-- , change the src attribute for
+    the first picture in the first article to:
+    "http://meadpoint.net/images/xmasajax.jpg"
+    Also add the class "blue" to all the paragraphs
+    in the second article. -->
+
+    <div>
+        <img alt="cute-dog">
+        <p>this is a brazilian dog</p>
+        <p>its name its called favela</p>
+        <p>this dog is gangster</p>
+    </div>
+
+    <script>
+        document.querySelector('img').setAttribute('src', "http://meadpoint.net/images/xmasajax.jpg")
+        
+        var myPS = document.getElementsByTagName('p');
+
+        (function(){
+            for(var i = 0; i < myPS.length; i++){
+            myPS[i].className ='blue'
+        }
+        })()
+
+    </script>
+    
+</body>
+</html>

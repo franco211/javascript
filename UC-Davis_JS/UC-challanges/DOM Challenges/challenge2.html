@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Challenges</title>
+</head>
+<body>
+    <h1>DOM challenge 2</h1>
+    <!-- get all the paragraphs on
+    the page, assign them to a variable, then use
+    that variable in a loop to set the style.color
+    property to green. -->
+
+    <p>this is the paragraph i am changing</p>
+    <p>this is the paragraph i am changing</p>
+    <p>this is the paragraph i am changing</p>
+    <p>this is the paragraph i am changing</p>
+    <p>this is the paragraph i am changing</p>
+
+    <script>
+        var myParagraphs = document.getElementsByTagName('p');
+
+        (function(){
+            for(var i = 0; i <myParagraphs.length; i++){
+            console.log(myParagraphs[i].style.color="green")
+        }
+        }())
+        
+
+    </script>
+    
+</body>
+</html>

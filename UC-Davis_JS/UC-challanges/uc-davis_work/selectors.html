@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Selections and Booleans</title>
+</head>
+<body>
+
+    <h1>Testing Selectors.</h1>
+
+    <script>
+
+        var red = true;
+        var blue = false;
+        var green; //undefined variable
+        var myNum = 5;
+        var otherNum = 5;
+
+       /*  if(myNum == otherNum) {
+            console.log("the statement is true!")
+        }
+        else{
+            console.log("the statement is false!")
+        } */
+
+        var colors = ["red", "green", "blue", "yellow"];
+        var selectedColor = colors[2];
+
+       /*  if (selectedColor === "red") {
+            console.log("this color is red");
+        }
+        else if(selectedColor === "blue"){
+            console.log("this color is blue");
+        }
+        else{
+            console.log("this color is yellow");
+        } */
+
+       /*  switch(selectedColor){
+            case "red": console.log("this color is red");
+                break;
+            case "blue": console.log("this color is blue");
+                break;
+            case "green": console.log("this color is green");
+                break;
+            case "yellow": console.log("this color is yellow");
+                break
+            default: console.log("there was an error");
+
+        } */
+
+        /* var goodMood = true;
+        var gotSleep = true;
+
+        /* if (goodMood && gotSleep){
+            console.log("today is a good day")
+        }
+        else{
+            console.log("i am grumpy")
+        } */
+
+        /*grep - || checks to see if any of the statement in the if statement are true*/
+        var gotBreakfast = true;
+        var gotLunch = true;
+        var gotDinner = false;
+
+        if (gotBreakfast || gotLunch || gotDinner){
+            console.log("i am not starving");
+        }
+        else {
+            console.log("STARVING");
+        }
+
+
+    </script>
+    
+</body>
+</html>

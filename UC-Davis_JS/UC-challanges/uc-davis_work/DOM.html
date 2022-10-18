@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM examples</title>
+</head>
+    <style>
+        .blue{
+            color: blue;
+        }
+    </style>
+<body>
+    <h1>Document Object Model</h1>
+
+    <p> here we go again</p>
+
+    <p id="one">Here is a paragraph with text</p>
+    <p>i have to master javascript</p>
+    
+
+    <div id="special">
+        <p class="cheese"> i live blue cheese</p>
+        <p>i hate chedar cheese</p>
+    </div>
+
+    <form>
+        <label><input type="checkbox">yes</label>
+    </form>
+    
+    <script>
+        /* document.getElementById("one").style.color = 'red';
+        
+        var myText = document.getElementsByTagName('p');
+        console.log(myText); */
+
+       /*  var myText = document.getElementsByTagName('p');
+
+        for(var i = 0; i < myText.length; i++){
+            myText[i].style.color = "red";
+            alert(`this is element ${i}`)
+        } */
+
+        /* var myText = document.getElementsByClassName('blue');
+            myText[0].style.color = 'blue'; */
+
+        /* var myText = document.querySelector('#special .cheese');
+        myText.style.fontSize = '24px'; */
+
+        /* var myText = document.querySelectorAll('#special p');
+
+        for(var i = 0; i < myText.length; i++){
+            myText[i].style.fontWeight = 'bold';
+        } */
+
+        /* document.getElementById('special').innerHTML = "<p>eat some cheese</p>"; */
+
+        /* document.querySelector('p').className = 'blue'; */
+
+        document.querySelector('input').setAttribute('checked', 'checked');
+
+    </script>
+</body>
+</html>

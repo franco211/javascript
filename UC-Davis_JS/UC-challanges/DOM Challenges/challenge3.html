@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM challenges</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM Challenge 3</h1>
+
+    <!--  assign the class of .red
+    (which is already defined inside the style tags
+    at the top of the page) to the <h1> in the
+    header and to the date in the second article -->
+
+        <div id="special">
+            <h2>This is todays</h2>
+        </div>
+
+    <script>
+        document.querySelector('h2').className = "red";
+        document.querySelector('h2').className = "red";
+
+
+    </script>
+    
+</body>
+</html>

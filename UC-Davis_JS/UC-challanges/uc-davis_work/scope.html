@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Scope</title>
+</head>
+<body>
+    <h1>scope in JS</h1>
+
+    <!-- avoid using global Scope -->
+
+    <p>this is some text</p>
+    <p>this is some text</p>
+    <p>this is some text</p>
+
+    <!-- any functions are closures -->
+
+    <script>
+        /* var aVariable = "this is global";
+
+        function testScope(){
+            oopsGlobal = 'is this global'; //this is a global variable without the var 
+            var aVariable = "this is local"; // this is a local scope with the var
+            console.log(aVariable);
+        }
+
+        testScope();
+
+        console.log(oopsGlobal);
+        console.log(aVariable); */
+
+        /* //IIFE - Immediately invoked function expression
+        // this one here runs when the page loads and keeps the variables local to the function
+        (function(){
+            var myPs = document.querySelectorAll('p');
+            //namespacing - space for the variable is set to that within the function.
+
+            for(var i = 0; i < myPs.length; i++){
+            myPs[i].style.color = 'red'
+        }
+        }()) */
+
+        /* //use strict
+         "use strict";
+
+         var newVar = "not properly defined";
+
+         console.log(newVar); */
+
+         (function(){
+            "use strict";
+            var myPs = document.querySelectorAll('p');
+            for(var i = 0; i < myPs.length; i++){
+                myPs[i].style.color = 'red';
+            }
+         }())
+       
+
+    </script>
+    
+</body>
+</html>

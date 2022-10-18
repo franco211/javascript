@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        div{
+            width: 50px;
+            height: 5000px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Js Events</h1>
+    <button>Do not press me</button>
+
+    <br>
+
+    <a href="http://google.com">Go to google</a>
+
+    <br>
+
+    <form method="get">
+
+        <label>Your Name: <input type = "text" name = "name>"</label>
+        <input type = "submit" value = "send">
+    </form>
+
+    <br>
+
+    <h2>role your mouse over</h2>
+    <h3>capturing scroll events</h3>
+    <div>
+
+    </div>
+
+    <script>
+        /* var btn = document.querySelector('button');
+
+         btn.onclick = function ouch(){
+            alert('please do not');
+        }  */
+
+        /* function ouch(){
+            alert('i wish you did not');
+        }
+
+        btn.addEventListener('click', ouch) */
+
+        /* //addEventListener with anonymous function.
+
+        btn.addEventListener('click', function(){
+            alert('i wish you did not')
+        }) */
+
+      /*   //eventObject
+         btn.addEventListener('click', function(event){
+            event.target.style.backgroundColor = 'red';
+            alert('i hope you did not')
+         }) */
+
+         /* //prevent Default behavior
+         var link = document.querySelector('a');
+         link.addEventListener('click', function(event){
+            event.preventDefault();
+            alert('do not go to this page')
+         }) */
+
+         /* //Submit Event
+         var myForm = document.querySelector('form');
+
+         myForm.addEventListener('submit', function(event){
+            event.preventDefault();
+
+            var formData = document.querySelector('input').value;
+            alert(formData);
+         }) */
+
+         /* //mouse over
+
+         var heading = document.querySelector('h2');
+         var box = document.querySelector('div');
+
+         box.addEventListener('mouseover', function(){
+            heading.innerHTML = 'the mouse is over the box!';
+         })
+
+         box.addEventListener('mouseout', function(){
+            heading.innerHTML = 'the mouse has left the box!';
+         })
+
+         heading.addEventListener('mouseover', function(){
+            heading.innerHTML = 'Roll your mouse over the boxes!';
+         }) */
+
+         //scroll events
+
+         /* var pageTop;
+
+         window.addEventListener('scroll', function(){
+            pageTop = window.pageYOffset;
+            console.log(pageTop);
+         }); */
+
+        /*  //resize thw window
+
+         window.addEventListener('resize', function(){
+            console.log(`page width is ${window.innerWidth}`);
+            console.log(`page height is ${window.innerHeight}`)
+         }) */
+
+         /* //keydown event
+         document.addEventListener('keydown', function(){
+            alert('a key was pressed')
+         }) */
+
+         //which key was pressed
+         document.addEventListener('keydown', function(event){
+            alert(`the ${event.key}a key was pressed`)
+         })
+    </script>
+    
+</body>
+</html>

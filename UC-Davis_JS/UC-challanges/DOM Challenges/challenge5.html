@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM challenges</title>
+</head>
+<body>
+    <h1>DOM challenge 5</h1>
+
+    <!-- get all the links, then check
+    to see if one of them is set to go to the
+    wikipedia page on llamas, if it is, set the text
+    of that link to "Llamas are cool! -->
+
+    <p>
+        lorem ipsum dolor sit amet, consector adipisicing elit.
+        Incidunt eum eos <a href="https://en.wikipedia.org/wiki/Llama">Llamas are cool.</a> 
+    </p>
+
+    <script>
+        var anchors = document.querySelector('a');
+
+        for(var i=0; i < anchors.length; i++){
+            var link = anchors[i].getAttribute('href');
+
+            if(link === "https://en.wikipedia.org/wiki/Llama"){
+                anchors[i].innerHTML= "Llamas are cool!";
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
